@@ -5,14 +5,41 @@
 body {
   margin: 0;
   min-height: 100vh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
   font-family: Arial, sans-serif;
   color: #222;
   background: #f4f4f4;
 }
 
+.site-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #222;
+  text-decoration: none;
+}
+
 .welcome {
+  margin: auto;
   padding: 2rem;
   text-align: center;
   background: #fff;
@@ -28,7 +55,7 @@ p {
   color: #666;
 }
 
-a {
+.button {
   color: #fff;
   background: #222;
   padding: 0.6rem 1rem;
